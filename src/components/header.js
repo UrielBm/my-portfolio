@@ -1,4 +1,5 @@
 import * as React from "react"
+import Seo from "../components/seo"
 import PropTypes from "prop-types"
 import { StaticImage } from "gatsby-plugin-image"
 import { Link } from "@reach/router"
