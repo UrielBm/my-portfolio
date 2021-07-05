@@ -64,6 +64,12 @@ $pink: #a8154d;
           font-size: 0.85rem;
         }
       }
+      .link_activo {
+        @extend .link;
+        .text_item {
+          font-weight: 700;
+        }
+      }
     }
     @media screen and(max-width:750px ) {
       width: 100%;

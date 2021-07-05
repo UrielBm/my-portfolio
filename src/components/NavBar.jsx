@@ -4,7 +4,7 @@ import { Link } from "gatsby"
 const NavBar = () => {
   return (
     <nav className="nav">
-      <Link to="/my_cv" className="link">
+      <Link to="/my_cv" className="link" activeClassName="link_activo">
         <div className="wrapperItem">
           <div className="wrapperIcon">
             <StaticImage
@@ -20,7 +20,11 @@ const NavBar = () => {
           <p className="text_item">Mi Cv</p>
         </div>
       </Link>
-      <Link to="/certificates_and_courses" className="link">
+      <Link
+        to="/certificates_and_courses"
+        className="link"
+        activeClassName="link_activo"
+      >
         <div className="wrapperItem">
           <div className="wrapperIcon">
             <StaticImage

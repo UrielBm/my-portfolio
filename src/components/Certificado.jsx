@@ -1,7 +1,6 @@
 import React from "react"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 const Certificado = ({ certificado }) => {
-  console.log(certificado)
   const image = getImage(certificado.img)
   return (
     <div>
