@@ -1,0 +1,76 @@
+$font_code: "IBM Plex Mono", monospace;
+$font_titles: "Nunito", sans-serif;
+$color1: #02475e;
+$color2: #99a8b2;
+$black: #272727;
+$white: #f5f4f4;
+$pink: #a8154d;
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  background-color: $white;
+  width: 100%;
+  padding: 0 2rem;
+  z-index: 99;
+  .link {
+    outline: none;
+    &:hover {
+      cursor: pointer;
+    }
+    .wrapperLogo {
+      width: 6rem;
+      @media screen and(max-width:540px ) {
+        width: 3.5rem;
+      }
+      .imgLogo {
+        width: 100%;
+        //filter: drop-shadow(0 0 1.5px $white);
+      }
+    }
+  }
+  .wrapperNav {
+    width: 60%;
+    .nav {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      .link {
+        width: 50%;
+        text-decoration: none;
+        outline: none;
+        .wrapperItem {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 100%;
+          .wrapperIcon {
+            width: 3rem;
+            margin-right: 1rem;
+            .imgIcon {
+              width: 100%;
+            }
+            @media screen and(max-width:540px ) {
+              width: 1.5rem;
+            }
+          }
+          .text_item {
+            color: $black;
+          }
+        }
+        @media screen and(max-width:540px ) {
+          font-size: 0.85rem;
+        }
+      }
+    }
+    @media screen and(max-width:540px ) {
+      width: 100%;
+    }
+  }
+  @media screen and(max-width:540px ) {
+    flex-direction: column;
+    padding: 0.5rem 0;
+  }
+}

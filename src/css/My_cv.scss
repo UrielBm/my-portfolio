@@ -1,0 +1,260 @@
+$font_code: "IBM Plex Mono", monospace;
+$font_titles: "Nunito", sans-serif;
+$color1: #02475e;
+$color2: #99a8b2;
+$black: #272727;
+$white: #f5f4f4;
+$pink: #a8154d;
+.wrapperCv {
+  width: 100%;
+  background-color: $white;
+  color: $black;
+  padding-top: 5.5rem;
+  .my_cv {
+    max-width: 70rem;
+    margin: 0 auto;
+    padding: 1rem 1.5rem;
+    display: flex;
+    @media screen and (max-width: 540px) {
+      flex-direction: column;
+    }
+    .my_cvLeft {
+      width: 50%;
+      @media screen and (max-width: 540px) {
+        width: 100%;
+      }
+      .perfil {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 1rem;
+        .wrapperPicture {
+          width: 18rem;
+          margin: 0 auto 0.5rem auto;
+          .photo {
+            width: 18rem;
+            height: 18rem;
+            border-radius: 50%;
+          }
+        }
+        .wrapperName {
+          width: 100%;
+          .name {
+            text-align: center;
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+            &::first-letter {
+              font-size: 1.7rem;
+              color: $pink;
+              font-weight: 700;
+            }
+          }
+        }
+        .wrapperSchool {
+          width: 100%;
+          .school {
+            text-align: center;
+            font-size: 1.35rem;
+          }
+        }
+      }
+      .Education {
+        width: 100%;
+        margin-bottom: 0.5rem;
+        .wrapperTitle {
+          h4 {
+            font-family: $font_titles;
+            font-size: 1.8rem;
+            &::first-letter {
+              color: $pink;
+              font-weight: 800;
+            }
+          }
+          hr {
+            border: 1px solid $pink;
+          }
+        }
+        .wrapperList {
+          width: 100%;
+          .item {
+            width: 100%;
+            margin-bottom: 0.45rem;
+            .itemTitle {
+              font-weight: 400;
+              &::first-letter {
+                font-weight: 700;
+                color: $pink;
+                font-size: 1.1rem;
+              }
+            }
+          }
+          .wrapperDate {
+            display: flex;
+            align-items: center;
+            p {
+              font-size: 0.8rem;
+              color: $color2;
+              &:not(:last-of-type) {
+                margin-right: 0.5rem;
+              }
+            }
+          }
+        }
+      }
+      .Contact {
+        @extend .Education;
+        .wrapperContact {
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          &:not(:last-of-type) {
+            margin-bottom: 0.6rem;
+          }
+          .name {
+            font-weight: 400;
+            margin-right: 1rem;
+            &::first-letter {
+              font-size: 1.2rem;
+              font-weight: 700;
+              color: $pink;
+            }
+          }
+          .link {
+            .wrapperIcon {
+              width: 1.5rem;
+              .icon {
+                width: 100%;
+              }
+            }
+          }
+        }
+      }
+    }
+    .my_cvRight {
+      width: 50%;
+      padding: 1rem;
+      @media screen and (max-width: 540px) {
+        width: 100%;
+        padding: 0;
+      }
+      .wrapperDescription {
+        width: 100%;
+        margin-bottom: 0.5rem;
+        .wrapperTitle {
+          h4 {
+            font-family: $font_titles;
+            font-size: 1.8rem;
+            &::first-letter {
+              color: $pink;
+              font-weight: 800;
+            }
+          }
+          hr {
+            border: 1px solid $pink;
+          }
+        }
+        .description {
+          font-size: 0.85rem;
+          line-height: 1.1rem;
+          letter-spacing: 0.1em;
+          &::first-letter {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: $pink;
+          }
+        }
+      }
+      .Wrapperwork {
+        @extend .wrapperDescription;
+        .listWork {
+          .work {
+            margin-bottom: 1rem;
+            .wrapperCompany {
+              margin-bottom: 0.5rem;
+              .wrapperInfo {
+                display: flex;
+                align-items: center;
+                flex-wrap: wrap;
+                margin-bottom: 0.3rem;
+                h5 {
+                  font-family: $font_titles;
+                  font-size: 1.1rem;
+                  margin-right: 0.5rem;
+                  &::first-letter {
+                    font-weight: 800;
+                    font-size: 1.3rem;
+                    color: $pink;
+                  }
+                }
+                p {
+                  font-weight: 700;
+                  color: $pink;
+                }
+              }
+              .wrapperDates {
+                display: flex;
+                align-items: center;
+                p {
+                  font-size: 0.8rem;
+                  color: $color2;
+                  &:not(:last-child) {
+                    margin-right: 1rem;
+                  }
+                }
+              }
+            }
+            .workDescription {
+              font-size: 0.9rem;
+            }
+          }
+        }
+      }
+      .wrapperSkills {
+        @extend .wrapperDescription;
+        .skills {
+          .skill {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            &:not(:last-child) {
+              margin-bottom: 0.1rem;
+            }
+            .date {
+              font-size: 0.8rem;
+              color: $color2;
+            }
+          }
+        }
+      }
+    }
+  }
+  .wrapperButtonDownload {
+    max-width: 70rem;
+    margin: 0 auto;
+    padding: 1rem 0;
+    display: flex;
+    justify-content: center;
+    .ButtonDownload {
+      text-align: center;
+      text-decoration: none;
+      border: 2px solid $pink;
+      padding: 0.5rem 1rem;
+      border-radius: 0.6rem;
+      color: $pink;
+      font-weight: 700;
+      text-transform: uppercase;
+      background: transparent;
+      transition: width 0.4s ease-in-out, background 0.4s ease-in-out,
+        color 0.4s ease-in-out;
+      &:hover {
+        cursor: pointer;
+        width: 15rem;
+        background: $pink;
+        color: $white;
+      }
+    }
+  }
+}

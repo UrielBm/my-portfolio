@@ -1,32 +1,26 @@
 import * as React from "react"
 import PropTypes from "prop-types"
-import { Link } from "gatsby"
-
+import { StaticImage } from "gatsby-plugin-image"
+import { Link } from "@reach/router"
+import NavBar from "./NavBar"
+import "./../css/Header.scss"
 const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
-  >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
+  <header className="header">
+    <Link to="/" className="link">
+      <div className="wrapperLogo">
+        <StaticImage
+          src="../images/icon.png"
+          quality={95}
+          formats={["AUTO", "WEBP", "AVIF"]}
+          alt="logo"
+          className="wrapperLogo"
+          imgClassName="imgLogo"
+          placeholder="blurred"
+        />
+      </div>
+    </Link>
+    <div className="wrapperNav">
+      <NavBar />
     </div>
   </header>
 )
