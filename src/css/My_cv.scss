@@ -15,12 +15,12 @@ $pink: #a8154d;
     margin: 0 auto;
     padding: 1rem 1.5rem;
     display: flex;
-    @media screen and (max-width: 540px) {
+    @media screen and (max-width: 750px) {
       flex-direction: column;
     }
     .my_cvLeft {
       width: 50%;
-      @media screen and (max-width: 540px) {
+      @media screen and (max-width: 750px) {
         width: 100%;
       }
       .perfil {
@@ -136,7 +136,7 @@ $pink: #a8154d;
     .my_cvRight {
       width: 50%;
       padding: 1rem;
-      @media screen and (max-width: 540px) {
+      @media screen and (max-width: 750px) {
         width: 100%;
         padding: 0;
       }

@@ -12,7 +12,7 @@ const TechStack = () => {
           src="../images/tech/react.png"
           quality={65}
           formats={["AUTO", "WEBP", "AVIF"]}
-          alt="img_cv"
+          alt="react"
           className="wrapperImg"
           imgClassName="carouselImg"
           placeholder="blurred"
@@ -21,7 +21,7 @@ const TechStack = () => {
           src="../images/tech/next.png"
           quality={65}
           formats={["AUTO", "WEBP", "AVIF"]}
-          alt="img_cv"
+          alt="next"
           className="wrapperImg"
           imgClassName="carouselImg"
           placeholder="blurred"
@@ -30,7 +30,7 @@ const TechStack = () => {
           src="../images/tech/gatsby.png"
           quality={65}
           formats={["AUTO", "WEBP", "AVIF"]}
-          alt="img_cv"
+          alt="gatsby"
           className="wrapperImg"
           imgClassName="carouselImg"
           placeholder="blurred"
@@ -39,7 +39,7 @@ const TechStack = () => {
           src="../images/tech/Nodejs.png"
           quality={65}
           formats={["AUTO", "WEBP", "AVIF"]}
-          alt="img_cv"
+          alt="Nodejs"
           className="wrapperImg"
           imgClassName="carouselImg"
           placeholder="blurred"
@@ -48,7 +48,7 @@ const TechStack = () => {
           src="../images/tech/express.png"
           quality={65}
           formats={["AUTO", "WEBP", "AVIF"]}
-          alt="img_cv"
+          alt="Express"
           className="wrapperImg"
           imgClassName="carouselImg"
           placeholder="blurred"
@@ -57,7 +57,7 @@ const TechStack = () => {
           src="../images/tech/mongodb.png"
           quality={65}
           formats={["AUTO", "WEBP", "AVIF"]}
-          alt="img_cv"
+          alt="MongoDB"
           className="wrapperImg"
           imgClassName="carouselImg"
           placeholder="blurred"
@@ -66,7 +66,7 @@ const TechStack = () => {
           src="../images/tech/html5.png"
           quality={65}
           formats={["AUTO", "WEBP", "AVIF"]}
-          alt="img_cv"
+          alt="HTML5"
           className="wrapperImg"
           imgClassName="carouselImg"
           placeholder="blurred"
@@ -75,7 +75,7 @@ const TechStack = () => {
           src="../images/tech/css.png"
           quality={65}
           formats={["AUTO", "WEBP", "AVIF"]}
-          alt="img_cv"
+          alt="CSS"
           className="wrapperImg"
           imgClassName="carouselImg"
           placeholder="blurred"
@@ -84,7 +84,7 @@ const TechStack = () => {
           src="../images/tech/javascript_logo.png"
           quality={65}
           formats={["AUTO", "WEBP", "AVIF"]}
-          alt="img_cv"
+          alt="JavaScript"
           className="wrapperImg"
           imgClassName="carouselImg"
           placeholder="blurred"
@@ -93,7 +93,7 @@ const TechStack = () => {
           src="../images/tech/sass.png"
           quality={65}
           formats={["AUTO", "WEBP", "AVIF"]}
-          alt="img_cv"
+          alt="Sass"
           className="wrapperImg"
           imgClassName="carouselImg"
           placeholder="blurred"
@@ -102,7 +102,7 @@ const TechStack = () => {
           src="../images/tech/Laravel.png"
           quality={65}
           formats={["AUTO", "WEBP", "AVIF"]}
-          alt="img_cv"
+          alt="Laravel"
           className="wrapperImg"
           imgClassName="carouselImg"
           placeholder="blurred"
@@ -111,7 +111,7 @@ const TechStack = () => {
           src="../images/tech/mysql_logo.png"
           quality={65}
           formats={["AUTO", "WEBP", "AVIF"]}
-          alt="img_cv"
+          alt="MySql"
           className="wrapperImg"
           imgClassName="carouselImg"
           placeholder="blurred"
