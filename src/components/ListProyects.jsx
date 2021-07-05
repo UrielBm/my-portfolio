@@ -5,7 +5,10 @@ import { useState } from "react"
 const ListProyects = () => {
   const list = useStaticQuery(graphql`
     query {
-      allDatoCmsListProyect(filter: { locale: { eq: "es" } }) {
+      allDatoCmsListProyect(
+        filter: { locale: { eq: "es" } }
+        sort: { fields: title, order: ASC }
+      ) {
         nodes {
           title
           short

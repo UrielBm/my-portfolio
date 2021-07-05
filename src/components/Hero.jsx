@@ -9,8 +9,8 @@ const Hero = () => {
         childImageSharp {
           gatsbyImageData(
             width: 950
-            quality: 70
-            webpOptions: { quality: 70 }
+            quality: 85
+            webpOptions: { quality: 85 }
             formats: WEBP
             placeholder: BLURRED
             blurredOptions: { toFormat: WEBP }
