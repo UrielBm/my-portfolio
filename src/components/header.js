@@ -6,6 +6,7 @@ import NavBar from "./NavBar"
 import "./../css/Header.scss"
 const Header = ({ siteTitle }) => (
   <header className="header">
+    <Seo title={siteTitle} lang="es" />
     <Link to="/" className="link">
       <div className="wrapperLogo">
         <StaticImage
