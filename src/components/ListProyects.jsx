@@ -26,9 +26,6 @@ const ListProyects = () => {
   }
   return (
     <>
-      <button className="actionButton" onClick={handleOnClick}>
-        Checa más proyectos.
-      </button>
       {show && (
         <div className="wrapperList">
           {arraylist.map(proyect => (
@@ -36,6 +33,9 @@ const ListProyects = () => {
           ))}
         </div>
       )}
+      <button className="actionButton" onClick={handleOnClick}>
+        {show ? "Ocultar lista -" : "Checa más proyectos +"}
+      </button>
     </>
   )
 }
