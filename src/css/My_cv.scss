@@ -7,13 +7,11 @@ $white: #f5f4f4;
 $pink: #a8154d;
 .wrapperCv {
   width: 100%;
-  background-color: $white;
-  color: $black;
   padding-top: 5.5rem;
   .my_cv {
     max-width: 70rem;
     margin: 0 auto;
-    padding: 1rem 1.5rem;
+    padding: 4rem 1.5rem;
     display: flex;
     @media screen and (max-width: 750px) {
       flex-direction: column;

@@ -7,8 +7,6 @@ $white: #f5f4f4;
 $pink: #a8154d;
 .wrapperIndex {
   width: 100%;
-  background-color: $white;
-  color: $black;
   .hero {
     background-position: center;
     width: 100%;
@@ -364,4 +362,12 @@ $pink: #a8154d;
       padding: 0 1.5rem;
     }
   }
+}
+.Darkmode {
+  background-color: $black;
+  color: $white;
+}
+.Whitemode {
+  background-color: $white;
+  color: $black;
 }
