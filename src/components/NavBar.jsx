@@ -1,7 +1,9 @@
-import React from "react"
+import React, { useContext } from "react"
+import { DarkmodeContext } from "../context/DarkmodeContext"
 import { StaticImage } from "gatsby-plugin-image"
 import { Link } from "gatsby"
 const NavBar = () => {
+  const { dark } = useContext(DarkmodeContext)
   return (
     <nav className="nav">
       <Link to="/my_cv" className="link" activeClassName="link_activo">
@@ -17,7 +19,7 @@ const NavBar = () => {
               placeholder="blurred"
             />
           </div>
-          <p className="text_item">Mi Cv</p>
+          <p className={dark ? "textItemDark" : "text_item"}>Mi Cv</p>
         </div>
       </Link>
       <Link
@@ -37,7 +39,9 @@ const NavBar = () => {
               placeholder="blurred"
             />
           </div>
-          <p className="text_item">Mis certificados y cursos</p>
+          <p className={dark ? "textItemDark" : "text_item"}>
+            Mis certificados y cursos
+          </p>
         </div>
       </Link>
     </nav>

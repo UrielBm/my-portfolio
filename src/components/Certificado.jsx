@@ -3,7 +3,7 @@ import { GatsbyImage, getImage } from "gatsby-plugin-image"
 const Certificado = ({ certificado }) => {
   const image = getImage(certificado.img)
   return (
-    <div>
+    <div className="wrapperCertificado">
       <GatsbyImage
         image={image}
         alt="Certificado img"
