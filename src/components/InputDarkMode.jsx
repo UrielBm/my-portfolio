@@ -6,8 +6,10 @@ const InputDarkMode = () => {
   const handleChecked = () => {
     if (!dark) {
       setDark(true)
+      localStorage.setItem("Darkmode", true)
     } else {
       setDark(false)
+      localStorage.setItem("Darkmode", false)
     }
   }
   return (
