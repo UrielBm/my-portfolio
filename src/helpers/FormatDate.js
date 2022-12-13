@@ -5,7 +5,11 @@ export const formatDate = date => {
   return format(new Date(date), "MMM/yyyy")
 }
 export const FormatoFecha = date => {
-  return format(new Date(date), "MMM/yyyy", {
-    locale: es,
-  })
+  if (date !== null) {
+    return format(new Date(date), "MMMM/yyyy", {
+      locale: es,
+    })
+  } else {
+    return "PRESENTE"
+  }
 }
