@@ -39,5 +39,12 @@ module.exports = {
         apiToken: `59db515eb7cdd6e5ac4e3c715fc2b4`,
       },
     },
+    {
+      resolve: `gatsby-transformer-sharp`,
+      options: {
+        // The option defaults to true
+        checkSupportedExtensions: true,
+      },
+    },
   ],
 }
