@@ -22,6 +22,9 @@ const useCv = () => {
         nodes {
           id
           title
+          degree
+          location
+          description
           beginDate
           finishDate
         }
@@ -53,6 +56,7 @@ const useCv = () => {
           id
           company
           job
+          location
           descripcion
           beginDate
           finishDate
