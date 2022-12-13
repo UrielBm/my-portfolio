@@ -9,7 +9,6 @@ const WrapperContact = () => {
     <div className="Contact">
       <div className="wrapperTitle">
         <h4 className="title">Contactame.</h4>
-        <hr />
       </div>
       {contact.map(item => (
         <ItemContact key={item.id} data={item} />

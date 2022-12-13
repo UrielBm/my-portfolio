@@ -7,16 +7,21 @@ const WrapperSchool = () => {
   return (
     <div className="Education">
       <div className="wrapperTitle">
-        <h4 className="title">Educación.</h4>
-        <hr />
+        <h4 className="title">Formación.</h4>
       </div>
       <div className="wrapperList">
         {school.map(item => (
           <div key={item.id} className="item">
-            <p className="itemTitle">{item.title}</p>
+            <p className="itemTitle">
+              {item.title},<span className="location">{item.location}:</span>
+              <span className="degree">{item.degree}</span>
+            </p>
             <div className="wrapperDate">
               <p>{item.beginDate && FormatoFecha(item.beginDate)}</p>
               <p>{item.finishDate && FormatoFecha(item.finishDate)}</p>
+            </div>
+            <div>
+              <p>{item.description}</p>
             </div>
           </div>
         ))}

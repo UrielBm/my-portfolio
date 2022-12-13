@@ -8,7 +8,6 @@ const Description = () => {
     <div className="wrapperDescription">
       <div className="wrapperTitle">
         <h4>Acerca de mi</h4>
-        <hr />
       </div>
       <p className="description">{description}</p>
     </div>

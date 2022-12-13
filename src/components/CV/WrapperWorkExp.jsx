@@ -8,19 +8,21 @@ const WrapperWorkExp = () => {
   return (
     <div className="Wrapperwork">
       <div className="wrapperTitle">
-        <h4>Experiencia Laboral.</h4>
-        <hr />
+        <h4>Experiencia.</h4>
       </div>
       <div className="listWork">
         {work_expirience.map(work => (
           <div key={work.id} className="work">
             <div className="wrapperCompany">
               <div className="wrapperInfo">
-                <h5>{work.company}</h5>
-                <p>{work.job}</p>
+                <h5>{work.company},</h5>
+                <p>
+                  <span>{work.location}:</span>
+                  {work.job}
+                </p>
               </div>
               <div className="wrapperDates">
-                <p>{FormatoFecha(work.beginDate)}</p>{" "}
+                <p>{FormatoFecha(work.beginDate)}-</p>
                 <p>{FormatoFecha(work.finishDate)}</p>
               </div>
             </div>

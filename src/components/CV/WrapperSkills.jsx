@@ -8,8 +8,7 @@ const WrapperSkills = () => {
   return (
     <div className="wrapperSkills">
       <div className="wrapperTitle">
-        <h4>Tecnologías.</h4>
-        <hr />
+        <h4>Habilidades Técnicas.</h4>
       </div>
       <div className="skills">
         {skills.map(skill => (
