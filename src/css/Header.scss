@@ -20,7 +20,7 @@ $pink: #a8154d;
     }
     .wrapperLogo {
       width: 6rem;
-      @media screen and(max-width:750px ) {
+      @media screen and (max-width: 750px) {
         width: 3.5rem;
       }
       .imgLogo {
@@ -64,7 +64,7 @@ $pink: #a8154d;
             .imgIcon {
               width: 100%;
             }
-            @media screen and(max-width:750px ) {
+            @media screen and (max-width: 750px) {
               width: 1.5rem;
             }
           }
@@ -75,7 +75,7 @@ $pink: #a8154d;
             color: $white;
           }
         }
-        @media screen and(max-width:750px ) {
+        @media screen and (max-width: 750px) {
           font-size: 0.85rem;
         }
       }
@@ -86,11 +86,11 @@ $pink: #a8154d;
         }
       }
     }
-    @media screen and(max-width:750px ) {
+    @media screen and (max-width: 750px) {
       width: 100%;
     }
   }
-  @media screen and(max-width:750px ) {
+  @media screen and (max-width: 750px) {
     flex-direction: column;
     padding: 0.5rem 0;
   }

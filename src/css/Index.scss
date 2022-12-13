@@ -34,7 +34,7 @@ $pink: #a8154d;
           color: $white;
           font-size: 2rem;
         }
-        @media screen and(max-width:750px ) {
+        @media screen and (max-width: 750px) {
           width: 100%;
           h4 {
             color: $white;
@@ -58,7 +58,7 @@ $pink: #a8154d;
             font-weight: 700;
           }
         }
-        @media screen and(max-width:750px ) {
+        @media screen and (max-width: 750px) {
           p {
             font-size: 1.2rem;
             .span {
@@ -81,7 +81,7 @@ $pink: #a8154d;
         }
       }
     }
-    @media screen and(max-width:750px ) {
+    @media screen and (max-width: 750px) {
       @keyframes typing {
         from {
           width: 0;
@@ -107,7 +107,7 @@ $pink: #a8154d;
           font-weight: 800;
           color: $pink;
         }
-        @media screen and(max-width:750px ) {
+        @media screen and (max-width: 750px) {
           font-size: 1.4rem;
           &::first-letter {
             font-size: 1.8rem;
@@ -141,7 +141,7 @@ $pink: #a8154d;
             font-size: 1.4rem;
             font-weight: 700;
           }
-          @media screen and(max-width:750px ) {
+          @media screen and (max-width: 750px) {
             font-size: 1.1rem;
             margin: 0.8rem 0;
           }
@@ -170,15 +170,15 @@ $pink: #a8154d;
             font-size: 1.5rem;
           }
         }
-        @media screen and(max-width:750px ) {
+        @media screen and (max-width: 750px) {
           width: 100%;
         }
       }
-      @media screen and(max-width:750px ) {
+      @media screen and (max-width: 750px) {
         flex-direction: column;
       }
     }
-    @media screen and(max-width:750px ) {
+    @media screen and (max-width: 750px) {
       padding: 1.5rem;
     }
   }
@@ -194,12 +194,12 @@ $pink: #a8154d;
         .carouselImg {
           width: 100%;
         }
-        @media screen and(max-width:750px ) {
+        @media screen and (max-width: 750px) {
           width: 8rem;
         }
       }
     }
-    @media screen and(max-width:750px ) {
+    @media screen and (max-width: 750px) {
       padding: 0 1.5rem;
     }
   }
@@ -248,7 +248,7 @@ $pink: #a8154d;
                 }
               }
             }
-            @media screen and(max-width:750px ) {
+            @media screen and (max-width: 750px) {
               flex-direction: column;
               align-items: flex-start;
             }
@@ -273,7 +273,7 @@ $pink: #a8154d;
             }
           }
         }
-        @media screen and(max-width:750px ) {
+        @media screen and (max-width: 750px) {
           padding: 0;
         }
       }
@@ -358,7 +358,7 @@ $pink: #a8154d;
         }
       }
     }
-    @media screen and(max-width:750px ) {
+    @media screen and (max-width: 750px) {
       padding: 0 1.5rem;
     }
   }
