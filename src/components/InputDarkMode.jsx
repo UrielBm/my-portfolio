@@ -4,13 +4,7 @@ import { DarkmodeContext } from "../context/DarkmodeContext"
 const InputDarkMode = () => {
   const { dark, setDark } = useContext(DarkmodeContext)
   const handleChecked = () => {
-    if (!dark) {
-      setDark(true)
-      localStorage.setItem("Darkmode", true)
-    } else {
-      setDark(false)
-      localStorage.setItem("Darkmode", false)
-    }
+    dark ? setDark(false) : setDark(true)
   }
   return (
     <div className="wrapperInputDark">

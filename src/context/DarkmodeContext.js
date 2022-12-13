@@ -6,9 +6,7 @@ const defaultState = {
 export const DarkmodeContext = createContext(defaultState)
 
 const DarkModeProvider = props => {
-  const [dark, setDark] = useState(
-    localStorage.getItem("Darkmode") === "true" ? true : false
-  )
+  const [dark, setDark] = useState(false)
   return (
     <DarkmodeContext.Provider value={{ dark, setDark }}>
       {props.children}
