@@ -5,6 +5,7 @@ $color2: #99a8b2;
 $black: #272727;
 $white: #f5f4f4;
 $pink: #a8154d;
+$gray: #d9d9d9;
 .wrapperCv {
   width: 100%;
   padding-top: 5.5rem;
@@ -17,7 +18,8 @@ $pink: #a8154d;
       flex-direction: column;
     }
     .my_cvLeft {
-      width: 50%;
+      width: 70%;
+      margin-right: 2rem;
       @media screen and (max-width: 750px) {
         width: 100%;
       }
@@ -32,141 +34,35 @@ $pink: #a8154d;
           width: 18rem;
           margin: 0 auto 0.5rem auto;
           .photo {
-            width: 18rem;
-            height: 18rem;
+            object-fit: cover;
             border-radius: 50%;
           }
         }
         .wrapperName {
           width: 100%;
           .name {
-            text-align: center;
-            font-size: 1.5rem;
+            text-align: start;
+            font-size: 3rem;
+            font-weight: 700;
             margin-bottom: 0.5rem;
-            &::first-letter {
-              font-size: 1.7rem;
-              color: $pink;
-              font-weight: 700;
-            }
+          }
+          .focus {
+            color: $pink;
+            font-weight: 900;
           }
         }
         .wrapperSchool {
           width: 100%;
           .school {
-            text-align: center;
-            font-size: 1.35rem;
-          }
-        }
-      }
-      .Education {
-        width: 100%;
-        margin-bottom: 0.5rem;
-        .wrapperTitle {
-          h4 {
-            font-family: $font_titles;
-            font-size: 1.8rem;
-            &::first-letter {
-              color: $pink;
-              font-weight: 800;
-            }
-          }
-          hr {
-            border: 1px solid $pink;
-          }
-        }
-        .wrapperList {
-          width: 100%;
-          .item {
-            width: 100%;
-            margin-bottom: 0.45rem;
-            .itemTitle {
-              font-weight: 400;
-              &::first-letter {
-                font-weight: 700;
-                color: $pink;
-                font-size: 1.1rem;
-              }
-            }
-          }
-          .wrapperDate {
-            display: flex;
-            align-items: center;
-            p {
-              font-size: 0.8rem;
-              color: $color2;
-              &:not(:last-of-type) {
-                margin-right: 0.5rem;
-              }
-            }
-          }
-        }
-      }
-      .Contact {
-        @extend .Education;
-        .wrapperContact {
-          width: 100%;
-          display: flex;
-          align-items: center;
-          justify-content: space-between;
-          &:not(:last-of-type) {
-            margin-bottom: 0.6rem;
-          }
-          .name {
-            font-weight: 400;
-            margin-right: 1rem;
-            &::first-letter {
-              font-size: 1.2rem;
-              font-weight: 700;
-              color: $pink;
-            }
-          }
-          .link {
-            .wrapperIcon {
-              width: 1.5rem;
-              .icon {
-                width: 100%;
-              }
-            }
-          }
-        }
-      }
-    }
-    .my_cvRight {
-      width: 50%;
-      padding: 1rem;
-      @media screen and (max-width: 750px) {
-        width: 100%;
-        padding: 0;
-      }
-      .wrapperDescription {
-        width: 100%;
-        margin-bottom: 0.5rem;
-        .wrapperTitle {
-          h4 {
-            font-family: $font_titles;
-            font-size: 1.8rem;
-            &::first-letter {
-              color: $pink;
-              font-weight: 800;
-            }
-          }
-          hr {
-            border: 1px solid $pink;
-          }
-        }
-        .description {
-          font-size: 0.85rem;
-          line-height: 1.1rem;
-          letter-spacing: 0.1em;
-          &::first-letter {
-            font-size: 1.3rem;
+            text-align: start;
+            font-size: 1.2rem;
             font-weight: 700;
-            color: $pink;
+            margin: 0.5rem 0;
           }
         }
       }
       .Wrapperwork {
-        @extend .wrapperDescription;
+        @extend .Education;
         .listWork {
           .work {
             margin-bottom: 1rem;
@@ -181,15 +77,11 @@ $pink: #a8154d;
                   font-family: $font_titles;
                   font-size: 1.1rem;
                   margin-right: 0.5rem;
-                  &::first-letter {
-                    font-weight: 800;
-                    font-size: 1.3rem;
-                    color: $pink;
-                  }
+                  font-weight: 700;
                 }
                 p {
-                  font-weight: 700;
-                  color: $pink;
+                  font-weight: 400;
+                  font-style: italic;
                 }
               }
               .wrapperDates {
@@ -199,15 +91,115 @@ $pink: #a8154d;
                   font-size: 0.8rem;
                   color: $color2;
                   &:not(:last-child) {
-                    margin-right: 1rem;
+                    margin-right: 0;
                   }
                 }
               }
             }
             .workDescription {
               font-size: 0.9rem;
+              text-align: justify;
             }
           }
+        }
+      }
+      .Education {
+        width: 100%;
+        margin-bottom: 0.5rem;
+        .wrapperTitle {
+          h4 {
+            font-family: $font_titles;
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            color: $pink;
+            font-weight: 700;
+          }
+          hr {
+            border: 1px solid $pink;
+          }
+        }
+        .wrapperList {
+          width: 100%;
+          .item {
+            width: 100%;
+            margin-bottom: 1rem;
+            .itemTitle {
+              font-weight: 700;
+              .location {
+                font-weight: 400;
+              }
+              .degree {
+                font-weight: 400;
+                font-style: italic;
+              }
+            }
+          }
+          .wrapperDate {
+            display: flex;
+            align-items: center;
+            margin: 0.5rem 0;
+            p {
+              font-size: 0.8rem;
+              color: $color2;
+              &:not(:last-of-type) {
+                margin-right: 0.5rem;
+              }
+            }
+          }
+        }
+      }
+    }
+    .my_cvRight {
+      width: 30%;
+      padding: 1rem;
+      @media screen and (max-width: 750px) {
+        width: 100%;
+        padding: 0;
+      }
+      .Contact {
+        @extend .wrapperDescription;
+        .wrapperContact {
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          &:not(:last-of-type) {
+            margin-bottom: 0.6rem;
+          }
+          .name {
+            font-weight: 400;
+            margin-right: 1rem;
+          }
+          .link {
+            .wrapperIcon {
+              width: 1.5rem;
+              .icon {
+                width: 100%;
+              }
+            }
+          }
+        }
+      }
+      .wrapperDescription {
+        width: 100%;
+        margin-bottom: 0.5rem;
+        .wrapperTitle {
+          h4 {
+            font-family: $font_titles;
+            font-size: 1.6rem;
+            margin-bottom: 1rem;
+            color: $pink;
+            font-weight: 700;
+          }
+          hr {
+            border: 1px solid $pink;
+          }
+        }
+        .description {
+          text-align: justify;
+          font-size: 0.85rem;
+          line-height: 1.1rem;
+          letter-spacing: 0.1em;
         }
       }
       .wrapperSkills {
@@ -222,8 +214,15 @@ $pink: #a8154d;
             }
             .date {
               font-size: 0.8rem;
-              color: $color2;
             }
+          }
+        }
+      }
+      .wrapperAptitudes {
+        @extend .wrapperDescription;
+        .listAptitudes {
+          li {
+            margin: 1rem 0;
           }
         }
       }
