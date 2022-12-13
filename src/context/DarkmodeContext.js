@@ -1,7 +1,7 @@
 import React, { createContext, useState } from "react"
 
 const defaultState = {
-  dark: localStorage.getItem("Darkmode") === "true" ? true : false,
+  dark: false,
 }
 export const DarkmodeContext = createContext(defaultState)
 
