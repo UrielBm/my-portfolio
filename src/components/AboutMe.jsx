@@ -32,6 +32,25 @@ const AboutMe = () => {
     const desc = document.querySelector("#desc")
     desc.innerHTML = description
   }, [description])
+  // const element = useRef(null)
+  // const [isVisible, setisVisible] = useState(false)
+  // const callbackFuction = entries => {
+  //   const [entry] = entries
+  //   setisVisible(entry.isIntersecting)
+  // }
+  // const options = {
+  //   root: null,
+  //   rootMargin: "0px",
+  //   threshold: 1.0,
+  // }
+  // useEffect(() => {
+  //   const observer = new IntersectionObserver(callbackFuction, options)
+  //   if (element.current) observer.observe(element.current)
+  //   return () => {
+  //     if (element.current) observer.unobserve(element.current)
+  //   }
+  // }, [element, options])
+  // console.log(isVisible)
   return (
     <section className="aboutMe">
       <div className="wrapperTitle">
