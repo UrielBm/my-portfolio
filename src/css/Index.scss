@@ -289,6 +289,9 @@ $pink: #a8154d;
         text-decoration: underline;
         outline: none;
         margin-bottom: 0.6rem;
+        &:hover {
+          cursor: pointer;
+        }
       }
       .wrapperList {
         width: 100%;
