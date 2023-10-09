@@ -74,6 +74,9 @@ $pink: #a8154d;
           .textItemDark {
             color: $white;
           }
+          .link_activo {
+            font-weight: 700;
+          }
         }
         @media screen and (max-width: 750px) {
           font-size: 0.85rem;
